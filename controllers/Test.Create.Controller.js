@@ -43,7 +43,7 @@ exports.GeminiCreate = async (req, res) => {
                           "Test generated with 30 questions (upgrade to premium for more)" : 
                           "Test generated successfully",
                 test: savedQuestions,
-                testTime: testTime || 30, // Default test time 30 minutes if not specified
+                durationSeonds: durationSeconds || 30, // Default test time 30 minutes if not specified
                 limitApplied: result.limitApplied
             });
         } else {
