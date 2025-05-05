@@ -29,7 +29,7 @@ exports.GeminiCreate = async (req, res) => {
         // Check if user is premium
         // const user = await UserModel.findById(clerkId);
         // const isPremium = user?.premium || false;
-        const isPremium=false;
+        const isPremium=true;
         // Generate test content using Gemini
         const result = await generateTestFromPrompt(prompt, isPremium);
         
